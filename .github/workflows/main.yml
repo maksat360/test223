@@ -3,6 +3,11 @@ name: Run Telegram Bot
 on:
   push:
     branches: [ "main" ]
+    paths:  # ← ЭТО ДОБАВЛЕНО
+      - '**/*.xlsx'
+      - '**/*.xls'
+      - 'main.py'
+      - 'config.py'
   workflow_dispatch:
 
 jobs:
